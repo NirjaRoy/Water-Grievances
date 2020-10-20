@@ -1,0 +1,379 @@
+<?xml version="1.0"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:text="CATEGORY :"
+            android:textColor="#003056"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#003056"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/fillform"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#003056"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="6dp"
+                        android:background="@color/md_white_1000"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:shadowColor="#99FFFFFF"
+                        android:text="Back"
+                        android:textColor="#003056"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Please fill the details"
+                        android:textColor="@color/md_white_1000"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/out"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:background="@color/md_white_1000"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:shadowColor="#99FFFFFF"
+                        android:text="Next"
+                        android:textColor="#003056"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:enabled="false"
+                android:text="Date"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/input1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/today"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:focusable="false"
+                    android:hint=" Select Date"
+                    android:inputType="date"
+                    android:background="@drawable/edittext_border_bg"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/calendar_icon" />
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:enabled="false"
+                android:text="Location"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:id="@+id/input2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible">
+                <Spinner
+                    android:id="@+id/state"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/edittext_border_bg"
+                    android:scrollbars="vertical"
+                    android:hint="Select State"
+
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+                <Spinner
+                    android:id="@+id/district"
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Select District"
+                    android:scrollbars="vertical"
+                    android:background="@drawable/edittext_border_bg"
+                    android:spinnerMode="dropdown"
+                    android:visibility="visible" />
+            </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/input10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_border_bg"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/Locations"
+                        android:layout_width="match_parent"
+                        android:layout_height="73dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:textColor="#333333"
+                        android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/location_button"
+                    android:text="Get Location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="73dp"
+                    />
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/input6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:visibility="visible">
+            <LinearLayout
+                android:id="@+id/input5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible">
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:enabled="false"
+                android:text="Description"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="10dp"
+                    android:layout_marginLeft="190dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.2"
+                    android:src="@drawable/info" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/input3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border_bg"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/descriptionInput"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="start"
+                    android:layout_weight="0.8"
+                    android:gravity="center"
+                    android:textColor="#333333"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/Upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:enabled="false"
+                android:text="Upload Image"
+                android:textColor="#333333"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/buttonLoadPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="120sp"
+                android:layout_weight="0"
+                android:text="Load Picture"
+                android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/input4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp" />
+               <ImageView
+                   android:id="@+id/img2"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp" />
+               <ImageView
+                   android:id="@+id/img3"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp" />
+               <ImageView
+                   android:id="@+id/img4"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp" />
+               <ImageView
+                   android:id="@+id/img5"
+                   android:layout_width="80dp"
+                   android:layout_height="50dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="#ff9000"
+                android:gravity="center"
+                android:shadowColor="#99FFFFFF"
+                android:text="@string/submit"
+                android:textColor="@color/md_white_1000"
+                android:textSize="20sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".feedback_info">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/bg2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Admin"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left"
+                android:textColor="#007ab9"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FEEDBACK INFORMATION"
+                android:textStyle="bold"
+                android:textSize="30sp"
+
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/bg2"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="250dp"
+                    android:background="@color/md_white_1000"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:shadowColor="#99FFFFFF"
+                    android:text="Back"
+                    android:textColor="#003056"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/out"
+                    android:layout_width="75dp"
+                    android:layout_height="35dp"
+                    android:background="@color/md_white_1000"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:shadowColor="#99FFFFFF"
+                    android:text="Sign Out"
+                    android:textColor="#003056"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:id= "@+id/tablelayout"
+            android:layout_width= "match_parent"
+            android:layout_height= "match_parent"
+            android:stretchColumns="*">
+        </TableLayout>
+    </LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DemoWaterResource</string>
+    <string name="copyright">Copyright © Ministry of Water Resources. All rights reserved.</string>
+    <string name="tc"> Terms &amp; Conditions   |  </string>
+    <string name="admin_login"> Click Here For Admin Login   </string>
+    <string name="user_login"> Click Here For User Login   </string>
+    <string name="download">&lt;a href="https://play.google.com/store/apps/details?id=in.nic.cwc.knowyourwater&amp;hl=en"> Download our Know Your water App&lt;/a></string>
+    <string name="submit">SUBMIT</string>
+
+</resources>
